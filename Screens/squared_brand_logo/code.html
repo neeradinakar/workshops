@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="sqGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="crosshairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#16A34A"/>
+    </linearGradient>
+  </defs>
+  <!-- Base cadastral boundary tile -->
+  <rect x="12" y="12" width="96" height="96" rx="24" fill="url(#sqGrad)"/>
+  <!-- Cadastral survey polygon grid line overlay -->
+  <polygon points="28,34 88,26 94,82 36,92" fill="none" stroke="#60A5FA" stroke-width="2.5" stroke-dasharray="4,3" opacity="0.6"/>
+  <!-- Central demarcated plot with green fill -->
+  <polygon points="42,42 78,38 82,74 46,78" fill="#16A34A" fill-opacity="0.25" stroke="#22C55E" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- Center survey total station / prism beacon point -->
+  <circle cx="61" cy="58" r="5" fill="#FFFFFF"/>
+  <circle cx="61" cy="58" r="9" fill="none" stroke="#22C55E" stroke-width="2.5"/>
+  <!-- Reticle crosshair corner markers -->
+  <path d="M42,32 L42,42 L32,42" fill="none" stroke="#93C5FD" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M78,28 L78,38 L88,38" fill="none" stroke="#93C5FD" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M82,84 L82,74 L92,74" fill="none" stroke="#93C5FD" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M36,78 L46,78 L46,88" fill="none" stroke="#93C5FD" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
